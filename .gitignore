@@ -1,0 +1,24 @@
+# ROS / colcon
+/build/
+/install/
+/log/
+
+# Downloaded/generated Isaac assets
+/isaac_ros_assets/
+
+# Third-party source dependencies populated using vcstool
+#/src/_deps/
+
+# ROS bags
+*.bag
+*.db3
+*.mcap
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
+

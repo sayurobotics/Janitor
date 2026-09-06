@@ -1,15 +1,14 @@
-About this Janitor project:
-----------------------------
+# About this Janitor project:
 This project is to create a robot for hotel washroom cleaning purpose.
 This is a mobile 4 wheeled robot with vertical lift, 1-dof rotating arm for water spray, air dry and vacuum cleaning. Camera and lidar in the robot for navigation and vision. It will use VLA for cleaning sink, toilet, etc. and navigation (within bathroom) for cleaning floor.
 
-To install realsense camera drivers in host:
----------------------------------------------
+# To install realsense camera drivers in host:
  - [realsenseai.com/developers/get-started](https://www.realsenseai.com/get-started/)
  - https://github.com/realsenseai/librealsense/blob/development/doc/distribution_linux.md
 
-Note:
-------
+# Setup isaac-ros:
+
+## Note:
 Download this repo and rename the root folder of this repo from "Janitor" to "isaac_ros-dev", which should be located in ~/workspaces/isaac_ros-dev.
 
 ```
@@ -35,8 +34,7 @@ ankit@dev-PC-robotics:~/workspaces/isaac_ros-dev$ echo $ISAAC_ROS_WS
 /home/ankit/workspaces/isaac_ros-dev/
 ```
 
-Tutorials to follow for setup isaac-ros:
------------------------------------------
+## Links to follow for setup isaac-ros:
  - https://nvidia-isaac-ros.github.io/					(latest -> release 4.6)
  - https://nvidia-isaac-ros.github.io/getting_started/index.html
  - https://nvidia-isaac-ros.github.io/getting_started/sensors/realsense_setup.html
@@ -45,23 +43,21 @@ Tutorials to follow for setup isaac-ros:
  - https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_apriltag/isaac_ros_apriltag/index.html#quickstart
  - https://nvidia-isaac-ros.github.io/concepts/fiducials/apriltag/tutorial_isaac_sim.html
 
-isaac-ros commands:
--------------------
+# Commands:
+
+## isaac-ros commands:
  - isaac-ros activate --build-local
  - isaac-ros activate
 
-inside container:
------------------
+## inside container:
  - ros2 launch isaac_ros_examples isaac_ros_examples.launch.py launch_fragments:=realsense_mono_rect,apriltag
 
-in another terminal:
----------------------
+## in another terminal (inside container):
  - source /opt/ros/jazzy/setup.bash
  - ros2 topic list
  - rviz2 --ros-args -r /camera_info:=/camera_info_rect
 
-extra:
-------
+## extra:
  - rs-enumerate-devices
  - realsense-viewer
  - ros2 topic echo /tag_detections

@@ -14,9 +14,9 @@ FROM ${BASE_IMAGE}
 ENV ROS_DISTRO=jazzy
 ENV ROS_ROOT=/opt/ros/${ROS_DISTRO}
 
-ARG LIBREALSENSE_SOURCE_VERSION=v2.56.3
+ARG LIBREALSENSE_SOURCE_VERSION=v2.57.7
 ARG REALSENSE_ROS_GIT_URL=https://github.com/realsenseai/realsense-ros.git
-ARG REALSENSE_ROS_VERSION=r/4.56.3
+ARG REALSENSE_ROS_VERSION=r/4.57.7
 ARG LIBREALSENSE_BUILD_TOOL_OPTIONS=--force_rsusb
 
 COPY scripts/build-librealsense.sh /opt/realsense/build-librealsense.sh

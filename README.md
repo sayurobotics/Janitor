@@ -28,14 +28,14 @@ drwxrwxr-x  2 ankit ankit 4096 Aug 30 14:18 src
 drwxrwxr-x  2 ankit ankit 4096 Sep  7 00:10 .vscode
 ```
 
-Also use the below env var for a seamless experience with Nvidia's issac ros (as per its default path recommendations).
+Also use the below env var for a seamless experience with Nvidia's isaac ros (as per its default path recommendations).
 
 ```
 ankit@dev-PC-robotics:~/workspaces/isaac_ros-dev$ echo $ISAAC_ROS_WS
 /home/ankit/workspaces/isaac_ros-dev/
 ```
 
-Tutorials to follow for setup issac-ros:
+Tutorials to follow for setup isaac-ros:
 -----------------------------------------
  - https://nvidia-isaac-ros.github.io/					(latest -> release 4.6)
  - https://nvidia-isaac-ros.github.io/getting_started/index.html
@@ -45,7 +45,7 @@ Tutorials to follow for setup issac-ros:
  - https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_apriltag/isaac_ros_apriltag/index.html#quickstart
  - https://nvidia-isaac-ros.github.io/concepts/fiducials/apriltag/tutorial_isaac_sim.html
 
-issac-ros commands:
+isaac-ros commands:
 -------------------
  - isaac-ros activate --build-local
  - isaac-ros activate

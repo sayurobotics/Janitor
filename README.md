@@ -8,30 +8,39 @@ This is a mobile 4 wheeled robot with vertical lift, 1-dof rotating arm for wate
 
 # Setup isaac-ros:
 
-## Note:
+## Note-1:
 Download this repo and rename the root folder of this repo from "Janitor" to "isaac_ros-dev", which should be located in ~/workspaces/isaac_ros-dev.
 
 ```
-ankit@dev-PC-robotics:~/workspaces/isaac_ros-dev$ ls -la
-drwxrwxr-x 12 ankit ankit 4096 Sep  7 00:10 .
-drwxrwxr-x  3 ankit ankit 4096 Aug 30 14:18 ..
--rw-rw-r--  1 ankit ankit    0 Sep  7 00:33 dependencies.repos
-drwxrwxr-x  3 ankit ankit 4096 Sep  4 15:35 docker
-drwxrwxr-x  7 ankit ankit 4096 Sep  7 00:11 .git
--rw-rw-r--  1 ankit ankit  258 Sep  7 00:09 .gitignore
-drwxrwxr-x  3 ankit ankit 4096 Sep  1 00:37 isaac_ros_assets		(extra folder. not checked in this repo. gitignored it)
-drwxrwxr-x  2 ankit ankit 4096 Sep  6 23:47 .isaac-ros-cli
--rw-rw-r--  1 ankit ankit 1981 Sep  7 00:22 README.md
-drwxrwxr-x  2 ankit ankit 4096 Sep  4 15:37 scripts
-drwxrwxr-x  2 ankit ankit 4096 Aug 30 14:18 src
-drwxrwxr-x  2 ankit ankit 4096 Sep  7 00:10 .vscode
+~/workspaces/isaac_ros-dev$ ls -la
+drwxrwxr-x 12 user user 4096 Sep  7 00:10 .
+drwxrwxr-x  3 user user 4096 Aug 30 14:18 ..
+-rw-rw-r--  1 user user    0 Sep  7 00:33 dependencies.repos
+drwxrwxr-x  3 user user 4096 Sep  4 15:35 docker
+drwxrwxr-x  7 user user 4096 Sep  7 00:11 .git
+-rw-rw-r--  1 user user  258 Sep  7 00:09 .gitignore
+drwxrwxr-x  3 user user 4096 Sep  1 00:37 isaac_ros_assets		(extra folder. not checked in this repo. gitignored it)
+drwxrwxr-x  2 user user 4096 Sep  6 23:47 .isaac-ros-cli
+-rw-rw-r--  1 user user 1981 Sep  7 00:22 README.md
+drwxrwxr-x  2 user user 4096 Sep  4 15:37 scripts
+drwxrwxr-x  2 user user 4096 Aug 30 14:18 src
+drwxrwxr-x  2 user user 4096 Sep  7 00:10 .vscode
 ```
 
 Also use the below env var for a seamless experience with Nvidia's isaac ros (as per its default path recommendations).
 
 ```
-ankit@dev-PC-robotics:~/workspaces/isaac_ros-dev$ echo $ISAAC_ROS_WS
-/home/ankit/workspaces/isaac_ros-dev/
+~/workspaces/isaac_ros-dev$ echo $ISAAC_ROS_WS
+/home/<user>/workspaces/isaac_ros-dev/
+```
+
+## Note-2:
+Please make sure to change the \<user\> to your username for below file:
+
+```
+cat ./scripts/.isaac_ros_common-config
+CONFIG_DOCKER_SEARCH_DIRS=(/home/<user>/workspaces/isaac_ros-dev/docker /etc/isaac-ros-cli/docker)
+
 ```
 
 ## Links to follow for setup isaac-ros:

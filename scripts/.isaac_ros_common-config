@@ -1,1 +1,1 @@
-CONFIG_DOCKER_SEARCH_DIRS=(/home/ankit/workspaces/isaac_ros-dev/docker /etc/isaac-ros-cli/docker)
+CONFIG_DOCKER_SEARCH_DIRS=(/home/<user>/workspaces/isaac_ros-dev/docker /etc/isaac-ros-cli/docker)

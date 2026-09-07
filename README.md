@@ -9,7 +9,7 @@ This is a mobile 4 wheeled robot with vertical lift, 1-dof rotating arm for wate
 # Setup isaac-ros:
 
 ## Note-1:
-Download this repo and rename the root folder of this repo from "Janitor" to "isaac_ros-dev", which should be located in ~/workspaces/isaac_ros-dev.
+Download this repo and rename the root folder of this repo from "Janitor" to "isaac_ros-dev", which should be located in ~/workspaces/isaac_ros-dev
 
 ```
 ~/workspaces/isaac_ros-dev$ ls -la
@@ -38,17 +38,17 @@ Also use the below env var for a seamless experience with Nvidia's isaac ros (as
 Please make sure to change the \<user\> to your username for below file:
 
 ```
-cat ./scripts/.isaac_ros_common-config
+~/workspaces/isaac_ros-dev$ cat ./scripts/.isaac_ros_common-config
 CONFIG_DOCKER_SEARCH_DIRS=(/home/<user>/workspaces/isaac_ros-dev/docker /etc/isaac-ros-cli/docker)
 
 ```
 
 ## Links to follow for setup isaac-ros:
+ - [good third party tutorial](https://www.youtube.com/watch?v=V_JVNkAoDzI&list=PLunhqkrRNRhb3Fh0Lby60s4pb-klYLjEP&index=2)
  - https://nvidia-isaac-ros.github.io/					(latest -> release 4.6)
  - https://nvidia-isaac-ros.github.io/getting_started/index.html
  - https://nvidia-isaac-ros.github.io/getting_started/sensors/realsense_setup.html
  - https://nvidia-isaac-ros.github.io/concepts/dev_env/index.html
- - [good third party tutorial](https://www.youtube.com/watch?v=V_JVNkAoDzI&list=PLunhqkrRNRhb3Fh0Lby60s4pb-klYLjEP&index=2)
  - https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_apriltag/isaac_ros_apriltag/index.html#quickstart
  - https://nvidia-isaac-ros.github.io/concepts/fiducials/apriltag/tutorial_isaac_sim.html
 
